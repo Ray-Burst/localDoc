@@ -1,4 +1,29 @@
-<p>Hallow world this is  a local document</p>
-<p>I want to be a full stack devloper (dropdown)</p>
-<p>I want to be a full stack devloper (button) </p>
-<p>I am just writing code for no reson</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>rock-paper-seissors</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <section>
+      
+      <figure>
+        <figcaption class="title"><strong>Rock Paper Seissors</strong></figcaption>
+        <button onclick="winner('rock');" class="gameButton">✊</button>
+        <button onclick="winner('paper');" class="gameButton">🖐</button>
+        <button onclick="winner('scissors');" class="gameButton">✌</button>
+        <p class="js-result result"></p>
+        <p class="js-moves moves"></p>
+        <p class="js-score"></p>
+        <button onclick="resetScore();" class="reset-button">Reset Score</button>
+      </figure>
+    </section>
+  </main>
+  <script src="script.js">
+
+  </script>
+</body>
+</html>
