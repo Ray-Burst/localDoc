@@ -117,8 +117,3 @@ function autoPlay() {
 function stopAutoPlay() {
   clearInterval(intervalId);
 }
-
-
-let newArray = ['hallo', 'my', 'name']
-let ittrator = newArray.entries();
-console.log(ittrator);
