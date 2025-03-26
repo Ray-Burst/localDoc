@@ -102,3 +102,23 @@ function resetScore() {
   document.querySelector('.js-moves').innerHTML = '';
   document.querySelector('.js-result').innerHTML = '';
 }
+
+let intervalId;
+
+function autoPlay() {
+  let array = ['rock', 'paper', 'scissors'];
+  intervalId = setInterval(() => {
+    winner(getRandomElement(array));
+  }, 3000)
+  
+  
+}
+
+function stopAutoPlay() {
+  clearInterval(intervalId);
+}
+
+
+let newArray = ['hallo', 'my', 'name']
+let ittrator = newArray.entries();
+console.log(ittrator);

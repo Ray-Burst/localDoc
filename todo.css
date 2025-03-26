@@ -1,0 +1,54 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.todo-grid,.todo-input-grid{
+  display: grid;
+  grid-template-columns: 200px 150px 100px;
+  gap: 10px;
+}
+
+.todo-input-grid{
+  margin-bottom: 10px;
+  align-items: stretch;
+}
+
+.todo-grid{
+  align-items: stretch;
+}
+
+.todo-input-grid input{
+  padding:10px 20px;
+  
+}
+
+.todo-grid div {
+  
+  padding:10px 20px;
+  font-weight: bold;
+  
+}
+
+.addBtn{
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px black;
+  cursor: pointer;
+  
+  
+}
+.addBtn:active,.deleteBtn:active{
+  font-weight: bold;
+  box-shadow: none;
+}
+
+.deleteBtn{
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px black;
+  cursor: pointer;
+}
