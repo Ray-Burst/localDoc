@@ -24,7 +24,19 @@ function getRandomElement(arr) {
   return arr[randomIndex];  
 }  
 
+document.querySelector('.js-rock').addEventListener('click', () =>winner('rock'))
+document.querySelector('.js-paper').addEventListener('click', () => winner('paper'))
+document.querySelector('.js-scissors').addEventListener('click', () =>winner('scissors'))
 
+document.body.addEventListener('keydown', (event) => {
+  if (event.key === 'r') {
+    winner('rock');
+  } else if (event.key === 'p') {
+    winner('paper');
+  } else if (event.key === 's') {
+    winner('scissors');
+  }
+})
 
 function winner(myChoice){
 
@@ -93,6 +105,10 @@ function updateScoreElement() {
   document.querySelector('.js-score').innerHTML = `Wins: ${score.wins}, Loses: ${score.losses}, Ties: ${score.ties}`;
 }
 
+document.querySelector('.reset-button').addEventListener('click', () => resetScore());
+document.querySelector('.autoplay').addEventListener('click', () => autoPlay());
+document.querySelector('.stop-autoplay').addEventListener('click', () => stopAutoPlay());
+
 function resetScore() {
   score.wins=0;
   score.losses=0;
@@ -117,3 +133,5 @@ function autoPlay() {
 function stopAutoPlay() {
   clearInterval(intervalId);
 }
+
+

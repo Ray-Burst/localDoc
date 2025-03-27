@@ -1,6 +1,6 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    color:white;
+    color:rgb(0, 0, 0);
 }
 .title{
     font-size: 30px;
@@ -8,9 +8,9 @@ body{
 }
 figure{
     text-align: center;
-    background-color: rgb(44, 44, 44);
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
-    box-shadow: 1px 1px 5px black;
+    box-shadow: 4px 40x 4px black, -4px -4px -4px white;
     height: 80vh;
 }
 
@@ -24,14 +24,16 @@ figcaption{
     font-size: 50px;
     margin-left: 15px;
     cursor: pointer;
+    box-shadow: 4px 40x 4px black, -4px -4px -4px white;
 }
 
-.reset-button{
+.reset-button,.autoplay,.stop-autoplay{
     padding: 10px 15px;
     font-size: 15px;
     font-weight: bold;
     cursor: pointer;
     border: none;
+    box-shadow: 4px 40x 4px black, -4px -4px -4px white;
 }
 
 .result{
